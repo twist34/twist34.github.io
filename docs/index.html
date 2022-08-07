@@ -194,8 +194,8 @@
       // Search on enter key event
       function search(e) {
         if (e.keyCode == 13) {
-          var val = document.getElementById("search-field").value;
-	  window.open(`https://searx.tiekoetter.com/search?q=${val}&category_general=1&language=en-US&time_range=&safesearch=0&theme=simple`)
+          var val = document.getElementById("search-field").value
+	  window.location.replace(`https://google.com/search?q=${val}`);
         }
       }
 			//document.getElementById("main").innerHTML = Date();
